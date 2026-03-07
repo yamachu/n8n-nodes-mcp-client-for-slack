@@ -15,15 +15,15 @@
         "type": "git",
         "url": "git+https://github.com/yamachu/n8n-nodes-mcp-client-for-slack.git"
     },
-   "scripts": {
-		"build": "n8n-node build",
-		"build:watch": "tsc --watch",
-		"dev": "n8n-node dev",
-		"lint": "n8n-node lint",
-		"lint:fix": "n8n-node lint --fix",
-		"release": "n8n-node release",
-		"prepublishOnly": "n8n-node prerelease"
-	},
+    "scripts": {
+        "build": "n8n-node build",
+        "build:watch": "tsc --watch",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix",
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease"
+    },
     "files": [
         "dist"
     ],
@@ -36,13 +36,20 @@
         ]
     },
     "devDependencies": {
+        "@langchain/core": "*",
+        "@n8n/json-schema-to-zod": "*",
         "@n8n/node-cli": "*",
+        "@types/json-schema": "7.0.15",
         "eslint": "9.39.4",
         "prettier": "3.8.1",
         "release-it": "19.2.4",
-        "typescript": "5.9.3"
+        "typescript": "5.9.3",
+        "zod": "^3"
     },
     "peerDependencies": {
-        "n8n-workflow": "*"
+        "@langchain/core": "*",
+        "@n8n/json-schema-to-zod": "*",
+        "n8n-workflow": "*",
+        "zod": "^3"
     }
 }
