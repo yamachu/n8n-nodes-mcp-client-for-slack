@@ -29,10 +29,12 @@
     ],
     "n8n": {
         "n8nNodesApiVersion": 1,
-        "strict": true,
-        "credentials": [],
+        "strict": false,
+        "credentials": [
+            "dist/credentials/McpForSlackOAuth2Api.credentials.js"
+        ],
         "nodes": [
-            "dist/nodes/Example/Example.node.js"
+            "dist/nodes/McpClientForSlack/McpClientForSlack.node.js"
         ]
     },
     "devDependencies": {
