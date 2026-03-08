@@ -218,6 +218,7 @@ export class McpClientForSlack implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'MCP Client for Slack',
 		name: 'mcpClientForSlack',
+		subtitle: '={{ $parameter["toolName"] }}',
 		icon: { light: 'file:example.svg', dark: 'file:example.dark.svg' },
 		group: ['output'],
 		version: [1],
